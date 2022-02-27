@@ -49,6 +49,11 @@ Adapun organogram dari repository ini adalah sebagai berikut.
 3. output => isinya hasil output dari visualisasi plot dataset yang telah disave dari MainProgram.py
 4. photo_readme => isinya gambar yang diperlukan untuk readme
 
+# Strutur Source Code
+1. ConvexHull.py => isinya fungsi-fungsi untuk library Convex Hull dan fungsi-fungsi untuk visualisasi data
+2. MainProgram.py => isinya program utama
+3. main.ipynb => isinya beberapa visualisasi dataset dalam bentuk ipynb
+
 # Identitas Author
 Nama  : Muhammad Gilang Ramadhan (13520137).//
 Email : gilanglahat22@gmail.com.
