@@ -14,6 +14,8 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 4. scikit-learn Versi 1.0.2
 
 # Cara Penggunaan
+
+## Opening
 <img src="pembuka.jpg" />
 
 ## Untuk mengimplementasikan programmnya Anda bisa menjalankan file MainProgram.py ataupun main.ipynb
@@ -37,6 +39,7 @@ Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu 
 <img src="photo_readme/contoh_code_ipynb.jpg" />
 <img src="photo_readme/contoh_output_ipynb.jpg" />
 
+## Penutup
 <img src="penutup.jpg" />
 
 ## Identitas Author
