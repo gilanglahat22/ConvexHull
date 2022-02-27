@@ -5,6 +5,47 @@
 
 import numpy as np
 
+def printlogo():
+    print("[]=========================================================================================[]")
+    print("||    _ _              _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _       _ _ _ _ _ _ _ _ _   ||")
+    print("||   /   |            |   \     __ _|   |    _ _ _ _|     \     \     /     |     __ _ _|  ||")
+    print("||  /   /     _ __     \   \   /_ __    |   |  /   _ _ _   \     \_ _/      |    /_ _ __   ||")
+    print("||  \   \    /    \    /   /        |   |   | /   /     \   \               |           |  ||")
+    print("||   \   \  /  /\  \  /   /   _ _ __|   |   | \   \_ _ _/   / |\       /|   |    _ _ _ _|  ||")
+    print("||    \   \/  /__\  \/   /    \_ _ _    |_ _|_ \_ __       /  | \_ _ _/ |   |    \_ _ __   ||")
+    print("||     \_ _ _ _ _ _ _ __/_ _ _ _ _ _|_ _ _ _ _|_ _ _|_ _ _/_ _|         |_ _|__ _ _ _ _ |  ||")
+    print("||                                 _ _ _ _ _ ___ _ _ _ _                                   ||")
+    print("||                                |_ __    _ __|        \                                  ||")
+    print("||                                     |  |  /    _ _    \                                 ||")
+    print("||                                     |  | /    /   \    \                                ||")
+    print("||                                     |  | \    \_ _/    /                                ||")
+    print("||                                     |  |  \           /                                 ||")
+    print("||                                     |__|   \ _ _ _ __/                                  ||")
+    print("||   _ _ _ _ _ _ _ _ _ _ _      _ _ _           _ _ _ _ _ _ _        _ _ _                 ||")
+    print("||  |    _ _ _|      \    \    |   |  \        /    /  _ _ _ |\     /    /                 ||")
+    print("||  |   |   /   _ _   \    \   |   |   \      /    /  /_ _\__  \_ _/    /                  ||")
+    print("||  |   |  /   /   \   \    \  |   |    \    /    /          |  _ _    /                   ||")
+    print("||  |   |  \   \_ _/   /     \ |   |\    \_ /    /     _ _ __| /   \   \                   ||")
+    print("||  |   |_ _\_        /       \|   | \          /     \_ _/__ /     \   \                  ||")
+    print("||  |_ _ _ _ _|_ _ _ /|_ _|\_ _ _ _|  \_ _ _ __/_ _ _ _ _ _ _|_ _    \_ _\_ _ _ _ _        ||")
+    print("||                                              _ __      _ _ _ _       _ _ _ _ _ _        ||")
+    print("||                                             |    |    |   |   |     |   |   |   |       ||")
+    print("||                                             |    |    |   |   |     |   |   |   |       ||")
+    print("||                                             |    |_ __|   |   |     |   |   |   |       ||")
+    print("||                                             |     _ __    |   |     |   |   |   |       ||")
+    print("||                                             |    |    |   |   |_ _ _|   |   |   |       ||")
+    print("||                                             |    |    |   |             |   |_ _|_ _ _  ||")
+    print("||                                             |_ __|    |_ _|_ _ _ _ _ _ _|_ _ _ _ _|_ _| ||")
+    print("||                _ _ __ __ _ _ _ _ _ __ _ _         _ _ _ _ _ __ _ _ _ _ _                ||")
+    print("||               /    _ _ _|       \    |   \       /    /  _ _ _|   _ _   |               ||")
+    print("||              /    /   /    _ _   \   |    \     /    /  /_ _ _   |_ _|  |               ||")
+    print("||              \    \  /    /   \   \  |\    \   /    /         |        /                ||")
+    print("||               \    \ \    \_ _/   /  | \    \_/    /    _ _ __|   |\   \                ||")
+    print("||            __ _\    \ \          /   |_ \_ __     /     \_ _ _    | \   \               ||")
+    print("||           |_ _ _ _ _/  \_ _ _ _ /_ _ _ _ _ _|_ _ /_ _ _ _ _ _ |_ _|  \_ _\              ||")
+    print("||                                                                                         ||")
+    print("[]=========================================================================================[]")
+
 # Fungsi yang mengembalikan cross product dari koordinat ke segmen garis
 # Sekaligus menghitung jarak dari koordinat ke garis   
 def Menghitung_jarak(mulai, selesai, koordinat, eps=1e-8):
@@ -16,16 +57,16 @@ def partisi_setOfkoordinat_menjadiDua(mulai, selesai, array_of_koordinat):
     # Jika koordinat is None atau < 1
     if array_of_koordinat is None or array_of_koordinat.shape[0] < 1:
         return None, None
-    
-    # Jika tidak kosong atau < 1
-    temp1 = [] 
-    temp2 = []
-    for koordinat in array_of_koordinat:
-        jarak = Menghitung_jarak(mulai, selesai, koordinat)
-        if jarak > 0:
-            temp1.append(koordinat)
-        else:
-            temp2.append(koordinat) 
+    # Jika tidak kosong atau > 1
+    else:
+        temp1 = [] 
+        temp2 = []
+        for koordinat in array_of_koordinat:
+            jarak = Menghitung_jarak(mulai, selesai, koordinat)
+            if jarak > 0:
+                temp1.append(koordinat)
+            else:
+                temp2.append(koordinat) 
             
     # Mengubah dari bentuk koordinat dari temp1 dan temp2 menjadi bentuk array of numpy
     if len(temp1):
@@ -43,17 +84,18 @@ def Partisi_Segitiga(Array_of_koordinat, Vertex1, Vertex2, Vertex3):
     # Jika array of koordinat is None
     if Array_of_koordinat is None:
         return None, None
-    
-    # Mencari di sisi mana titik tersebut berada dengan cross product
-    temp1 = []
-    temp2 = []
-    for koordinat in Array_of_koordinat:
-        jarakPC = Menghitung_jarak(Vertex1, Vertex2, koordinat)
-        jarakCQ = Menghitung_jarak(Vertex2, Vertex3, koordinat)
-        if jarakPC > 0 and jarakCQ < 0:
-            temp1.append(koordinat)
-        elif jarakPC < 0 and jarakCQ > 0:
-            temp2.append(koordinat)
+    # Jika array of koordinat tidak kosong
+    else:
+        # Mencari di sisi mana titik tersebut berada dengan cross product
+        temp1 = []
+        temp2 = []
+        for koordinat in Array_of_koordinat:
+            jarakPC = Menghitung_jarak(Vertex1, Vertex2, koordinat)
+            jarakCQ = Menghitung_jarak(Vertex2, Vertex3, koordinat)
+            if jarakPC > 0 and jarakCQ < 0:
+                temp1.append(koordinat)
+            elif jarakPC < 0 and jarakCQ > 0:
+                temp2.append(koordinat)
     
     # Mengubah dari bentuk koordinat dari temp1 dan temp2 menjadi bentuk array of numpy
     if len(temp1):
@@ -100,15 +142,15 @@ class ConvexHull:
         return self.forward(koordinat_set)
 
     def _QuickHull(self):        
-        # Mengsort data berdasarkan x-axis, kemudian berdasarkan y-axis
+        # sort the data by x-axis, then by y-axis
         self.array_of_koordinat = self.array_of_koordinat[np.lexsort(np.transpose(self.array_of_koordinat)[::-1])]
         # Mencari left-most of koordinat dan right-most of koordinat
         left_most, right_most = self.array_of_koordinat[0], self.array_of_koordinat[-1]
         # Mendapatkan rest of array_of_koordinat 
         self.array_of_koordinat = self.array_of_koordinat[1:-1]
-        # Menambahkan left-most koordinat ke dalam output 
+        #Menambahkan left-most koordinat ke dalam output 
         self.convext_hull.append(left_most) 
-        # Menambahkan right-most koordinat ke dalam output
+        #Menambahkan right-most koordinat ke dalam output
         self.convext_hull.append(right_most)
 
         self.right_array_of_koordinat, self.left_array_of_koordinat = partisi_setOfkoordinat_menjadiDua(left_most, right_most, self.array_of_koordinat)
@@ -130,29 +172,30 @@ class ConvexHull:
     def _Mencarihull(self, array_of_koordinat, Vertex1, Vertex2):
         if array_of_koordinat is None:
             return None
-        jarak = 0.0
-        koordinat_sekarang = None 
-        indeks = None
-        for i, koordinat in enumerate(array_of_koordinat):
-            jarak_sekarang = abs(Menghitung_jarak(Vertex1, Vertex2, koordinat))
-            # Mencari jarak yang berjarak maksimum dari PQ yang berasal dari array_of_koordinat
-            if jarak_sekarang > jarak:
-                koordinat_sekarang = koordinat
-                indeks = i
-                jarak = jarak_sekarang
-        if koordinat_sekarang is None:
-            try:
-                raise Exception("input array of koordinat berada di line yang sama. Tidak ada convex hull yang ditemukan!")
-            except Exception as inst:
-                print(type(inst))
-                print(inst.args) 
-                return None
         else:
-            self.convext_hull.append(koordinat_sekarang)
-            # Delete koordinat sekarang dari array of koordinat yang original
-            array_of_koordinat = np.delete(array_of_koordinat, indeks, axis=0)
-        
-        # Mereturn hasil partisi segitiga ke temp1 dan temp2   
-        temp1, temp2 = Partisi_Segitiga(array_of_koordinat, Vertex1, koordinat_sekarang, Vertex2)
-        self._Mencarihull(temp1, Vertex1, koordinat_sekarang)
-        self._Mencarihull(temp2, koordinat_sekarang, Vertex2)
+            jarak = 0.0
+            koordinat_sekarang = None 
+            indeks = None
+            for i, koordinat in enumerate(array_of_koordinat):
+                jarak_sekarang = abs(Menghitung_jarak(Vertex1, Vertex2, koordinat))
+                # Mencari jarak yang berjarak maksimum dari PQ yang berasal dari array_of_koordinat
+                if jarak_sekarang > jarak:
+                    koordinat_sekarang = koordinat
+                    indeks = i
+                    jarak = jarak_sekarang
+            if koordinat_sekarang is None:
+                try:
+                    raise Exception("input array of koordinat berada di line yang sama. Tidak ada convex hull yang ditemukan!")
+                except Exception as inst:
+                    print(type(inst))
+                    print(inst.args) 
+                    return None
+            else:
+                self.convext_hull.append(koordinat_sekarang)
+                # Delete koordinat sekarang dari array of koordinat yang original
+                array_of_koordinat = np.delete(array_of_koordinat, indeks, axis=0)
+            
+            # Mereturn hasil partisi segitiga ke temp1 dan temp2   
+            temp1, temp2 = Partisi_Segitiga(array_of_koordinat, Vertex1, koordinat_sekarang, Vertex2)
+            self._Mencarihull(temp1, Vertex1, koordinat_sekarang)
+            self._Mencarihull(temp2, koordinat_sekarang, Vertex2)
