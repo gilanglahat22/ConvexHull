@@ -20,12 +20,13 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 
 ## Untuk mengimplementasikan programmnya Anda bisa menjalankan file MainProgram.py ataupun main.ipynb
 1. Untuk menjalankan file MainProgram.py anda bisa memasukkan command berikut di terminal
+
     ```shell
     python src/MainProgram.py
     ```
     atau dengan mengerunnya langsung di vscode (pastikan anda juga menginstall exstentionnya terlebih dahulu di vscode).
  
-Setelah itu, untuk visualisasi di MainProgram.py anda bisa memvisualisasikan 5 dataset, yaitu Iris, Wine, Breast_Cancer, Diabetes, dan Digit. Dimana untuk memvisualisasikannya akan disajikan pilihan menu awal sebagai berikut.
+Setelah itu, untuk visualisasi di MainProgram.py, Anda bisa memvisualisasikan 5 dataset, yaitu Iris, Wine, Breast_Cancer, Diabetes, dan Digit. Dimana untuk memvisualisasikannya akan disajikan pilihan menu awal sebagai berikut.
 
 <img src="photo_readme/MenuAwal.jpg" />
 
