@@ -24,7 +24,8 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
     ```shell
     python src/MainProgram.py
     ```
-    atau dengan mengerunnya langsung di vscode (pastikan anda juga menginstall exstentionnya terlebih dahulu di vscode).
+    atau dengan mengerunnya langsung di vscode (pastikan anda juga menginstall exstentionnya terlebih dahulu di vscode). 
+    Adapun cara untuk mengerun file python di vscode dapat anda ikuti seperti tutorial pada link berikut ini : https://code.visualstudio.com/docs/python/python-tutorial
  
 Setelah itu, untuk visualisasi di MainProgram.py, Anda bisa memvisualisasikan 5 dataset, yaitu Iris, Wine, Breast_Cancer, Diabetes, dan Digit. Dimana untuk memvisualisasikannya akan disajikan pilihan menu awal sebagai berikut.
 
