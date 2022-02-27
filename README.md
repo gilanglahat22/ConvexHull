@@ -21,7 +21,7 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 
 <img src="MenuAwal.jpg" />
 
-Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna disuruh untuk memasukkan kolom sumbu-x dan sumbu-y yang akan diuji serta memasukkan namafile dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
+Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna diminta untuk memasukkan kolom sumbu-x dan sumbu-y yang akan diuji serta memasukkan nama file dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
 
 <img src="menulanjutan.jpg" />
 
@@ -35,7 +35,7 @@ Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu 
 
 2. Untuk memvisualisasikan di file main.ipynb, pastikan anda sudah menginstall ipynb (jupyter notebook). Untuk visualisasinya anda, dapat menggunakan IDE jupiter_notebook ataupun Visual Studio Code. Untuk memvisualisasikannya di file main.ipynb, telah tersedia source code masing-masing test dataset pada file tersebut. Jadi, Anda tinggal memilih untuk mengerun source code mana yang anda ingin visualisasikan. Seperti gambar yang ditunjukkan di bawah ini.
 ![image](https://user-images.githubusercontent.com/80266785/155901927-5ef90ca5-e959-47bb-9ccb-c534d325adba.png)
-![image](https://user-images.githubusercontent.com/80266785/155901938-74ceb373-a8e1-4a22-829b-c1a12a406949.png)
+
 
 <img src="penutup.jpg" />
 
