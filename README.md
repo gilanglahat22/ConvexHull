@@ -34,13 +34,13 @@ Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu 
  <img src="commandlanjutan.jpg" />
 
 2. Untuk memvisualisasikan di file main.ipynb, pastikan anda sudah menginstall ipynb (jupyter notebook). Untuk visualisasinya anda, dapat menggunakan IDE jupiter_notebook ataupun Visual Studio Code. Untuk memvisualisasikannya di file main.ipynb, telah tersedia source code masing-masing test dataset pada file tersebut. Jadi, Anda tinggal memilih untuk mengerun source code mana yang anda ingin visualisasikan. Seperti gambar yang ditunjukkan di bawah ini.
-![image](https://user-images.githubusercontent.com/80266785/155901927-5ef90ca5-e959-47bb-9ccb-c534d325adba.png)
-
+<img src="contoh_code_ipynb.jpg" />
+<img src="contoh_output_ipynb.jpg" />
 
 <img src="penutup.jpg" />
 
-## Identitas Author :
-Nama  : Muhammad Gilang Ramadhan (13520137).
+## Identitas Author
+Nama  : Muhammad Gilang Ramadhan (13520137).//
 Email : gilanglahat22@gmail.com.
 
 ## Copyright By Muhammad Gilang Ramadhan
