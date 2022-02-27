@@ -98,24 +98,6 @@ class ConvexHull:
     
     def __call__(self, koordinat_set):
         return self.forward(koordinat_set)
-    
-    # def _isDidalam(self, koordinat):
-    #     for i in range(self.convext_hull.shape[0]-1):
-    #         mulai = self.convext_hull[i] 
-    #         selesai = self.convext_hull[i+1]
-    #         if Menghitung_jarak(mulai, selesai, koordinat) < 0:
-    #             return False
-    #     return True
-    
-    # def isDidalam(self, array_of_koordinat):
-    #     if len(self.convext_hull) == 0:
-    #         print("Mohon setidaknya build 1 Convex Hull")
-    #         return None
-    #     Hasil = []   
-    #     for koordinat in array_of_koordinat:
-    #         Hasil.append(self._isDidalam(koordinat))
-    #     Hasil = np.asarray(Hasil)
-    #     return Hasil
 
     def _QuickHull(self):        
         # sort the data by x-axis, then by y-axis
