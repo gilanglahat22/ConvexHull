@@ -46,6 +46,8 @@ Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu 
 <img src="photo_readme/contoh_code_ipynb.jpg" />
 <img src="photo_readme/contoh_output_ipynb.jpg" />
 
+Adapun cara mengerun file ipynb di vscode dapat anda ikuti seperti di link berikut ini : https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+
 ## Penutup
 <img src="photo_readme/penutup.jpg" />
 
