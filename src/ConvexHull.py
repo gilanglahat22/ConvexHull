@@ -4,48 +4,11 @@
 # SOLVE CONVEX HULL PROBLEM WITH DIVIDE AND CONQUER STRATEGY
 
 import numpy as np
-
-# Print Logo
-def printlogo():
-    print("[]=========================================================================================[]")
-    print("||    _ _              _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _       _ _ _ _ _ _ _ _ _   ||")
-    print("||   /   |            |   \     __ _|   |    _ _ _ _|     \     \     /     |     __ _ _|  ||")
-    print("||  /   /     _ __     \   \   /_ __    |   |  /   _ _ _   \     \_ _/      |    /_ _ __   ||")
-    print("||  \   \    /    \    /   /        |   |   | /   /     \   \               |           |  ||")
-    print("||   \   \  /  /\  \  /   /   _ _ __|   |   | \   \_ _ _/   / |\       /|   |    _ _ _ _|  ||")
-    print("||    \   \/  /__\  \/   /    \_ _ _    |_ _|_ \_ __       /  | \_ _ _/ |   |    \_ _ __   ||")
-    print("||     \_ _ _ _ _ _ _ __/_ _ _ _ _ _|_ _ _ _ _|_ _ _|_ _ _/_ _|         |_ _|__ _ _ _ _ |  ||")
-    print("||                                 _ _ _ _ _ ___ _ _ _ _                                   ||")
-    print("||                                |_ __    _ __|        \                                  ||")
-    print("||                                     |  |  /    _ _    \                                 ||")
-    print("||                                     |  | /    /   \    \                                ||")
-    print("||                                     |  | \    \_ _/    /                                ||")
-    print("||                                     |  |  \           /                                 ||")
-    print("||                                     |__|   \ _ _ _ __/                                  ||")
-    print("||   _ _ _ _ _ _ _ _ _ _ _      _ _ _           _ _ _ _ _ _ _        _ _ _                 ||")
-    print("||  |    _ _ _|      \    \    |   |  \        /    /  _ _ _ |\     /    /                 ||")
-    print("||  |   |   /   _ _   \    \   |   |   \      /    /  /_ _\__  \_ _/    /                  ||")
-    print("||  |   |  /   /   \   \    \  |   |    \    /    /          |  _ _    /                   ||")
-    print("||  |   |  \   \_ _/   /     \ |   |\    \_ /    /     _ _ __| /   \   \                   ||")
-    print("||  |   |_ _\_        /       \|   | \          /     \_ _/__ /     \   \                  ||")
-    print("||  |_ _ _ _ _|_ _ _ /|_ _|\_ _ _ _|  \_ _ _ __/_ _ _ _ _ _ _|_ _    \_ _\_ _ _ _ _        ||")
-    print("||                                              _ __      _ _ _ _       _ _ _ _ _ _        ||")
-    print("||                                             |    |    |   |   |     |   |   |   |       ||")
-    print("||                                             |    |    |   |   |     |   |   |   |       ||")
-    print("||                                             |    |_ __|   |   |     |   |   |   |       ||")
-    print("||                                             |     _ __    |   |     |   |   |   |       ||")
-    print("||                                             |    |    |   |   |_ _ _|   |   |   |       ||")
-    print("||                                             |    |    |   |             |   |_ _|_ _ _  ||")
-    print("||                                             |_ __|    |_ _|_ _ _ _ _ _ _|_ _ _ _ _|_ _| ||")
-    print("||                _ _ __ __ _ _ _ _ _ __ _ _         _ _ _ _ _ __ _ _ _ _ _                ||")
-    print("||               /    _ _ _|       \    |   \       /    /  _ _ _|   _ _   |               ||")
-    print("||              /    /   /    _ _   \   |    \     /    /  /_ _ _   |_ _|  |               ||")
-    print("||              \    \  /    /   \   \  |\    \   /    /         |        /                ||")
-    print("||               \    \ \    \_ _/   /  | \    \_/    /    _ _ __|   |\   \                ||")
-    print("||            __ _\    \ \          /   |_ \_ __     /     \_ _ _    | \   \               ||")
-    print("||           |_ _ _ _ _/  \_ _ _ _ /_ _ _ _ _ _|_ _ /_ _ _ _ _ _ |_ _|  \_ _\              ||")
-    print("||                                                                                         ||")
-    print("[]=========================================================================================[]")
+import numpy as np
+import pandas as pd
+import random
+import matplotlib.pyplot as plt
+from sklearn import datasets
 
 # Fungsi yang mengembalikan cross product dari koordinat ke segmen garis
 # Sekaligus menghitung jarak dari koordinat ke garis   
@@ -141,7 +104,7 @@ class ConvexHull:
     
     def __call__(self, koordinat_set):
         return self.forward(koordinat_set)
-
+    
     def _QuickHull(self):        
         # sort the data by x-axis, then by y-axis
         self.array_of_koordinat = self.array_of_koordinat[np.lexsort(np.transpose(self.array_of_koordinat)[::-1])]
@@ -200,3 +163,64 @@ class ConvexHull:
             temp1, temp2 = Partisi_Segitiga(array_of_koordinat, Vertex1, koordinat_sekarang, Vertex2)
             self._Mencarihull(temp1, Vertex1, koordinat_sekarang)
             self._Mencarihull(temp2, koordinat_sekarang, Vertex2)
+
+# Buat Visualisasi
+
+#inisialisasi variabel global
+convex_hull = ConvexHull()
+
+# Fungsi untuk pewarnaan
+def Warna(n):
+    warna = ['m', 'g', 'y', 'k', 'b', 'c', 'w', 'r']
+    if n > len(warna):
+        for i in (range(n-len(warna))):
+            r = random.random()
+            g = random.random()
+            b = random.random()
+            warna.append((r, g, b))
+    return warna
+
+# Fungsi untuk memilih dataset
+def load_datasets(nomor_dataset):
+    if nomor_dataset == 1:
+        data = datasets.load_iris()
+    elif nomor_dataset == 2:
+        data = datasets.load_wine()
+    elif nomor_dataset == 3:
+        data = datasets.load_breast_cancer()
+    elif nomor_dataset == 4:
+        data = datasets.load_diabetes()
+    elif nomor_dataset == 5:
+        data = datasets.load_digits()
+    df = pd.DataFrame(data.data, columns=data.feature_names)
+    df['target'] = pd.DataFrame(data.target)
+    return df, data
+
+# Fungsi untuk menampilkan tabel dataset
+def tampilkan_tabel_dataset(df):
+    print(df.shape)
+    print(df.head)
+
+# Fungsi untuk menampilkan plot grafik
+def tampilkan_plot_grafik(df, data):
+    sumbu_x = int(input("Masukkan Kolom untuk sumbu-x : "))
+    sumbu_y = int(input("Masukkan Kolom untuk sumbu-y : "))
+    savefile = input("Masukkan nama file yang ingin disave : ")
+    plt.figure(figsize = (10, 6))
+    UkuranLabel = len(df['target'].unique())
+    colors = Warna(UkuranLabel)
+    plt.title("Gilang")
+    plt.xlabel(data.feature_names[sumbu_x])
+    plt.ylabel(data.feature_names[sumbu_y])
+    print("Titik-titik yang berada pada convex hull sebagai berikut : ")
+    for i in range(UkuranLabel):
+        bucket = df[df['target'] == i]
+        bucket = bucket.iloc[:,[sumbu_x,sumbu_y]].values
+        convexhull = convex_hull(bucket)
+        plt.scatter(bucket[:, 0], bucket[:, 1], label=data.target_names[i], color=colors[i])
+        print(convexhull)
+        convexhull = np.vstack([convexhull, convexhull[0]])
+        plt.plot(convexhull[:,0], convexhull[:,1], colors[i])
+    plt.legend()
+    plt.savefig('output/' + savefile)
+    plt.show()
