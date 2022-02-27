@@ -8,10 +8,10 @@ Adapun repository ini berisi implementasi dari library Convex Hull yang dapat di
 
 ## Requirement
 Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, pastikan anda telah mendownload dan menginstall semua package berikut dengan cara pip install "nama package" di Command Prompt dan telah terinstall Python 3 di PC Anda.
-1. Numpy Versi 1.22.2
-2. Pandas Versi 1.4.1
-3. Matplotlib Versi 3.5.1
-4. scikit-learn Versi 1.0.2
+1. numpy==1.22.2
+2. pandas==1.4.1
+3. matplotlib==3.5.1
+4. scikit-learn==1.0.2
 
 # Cara Penggunaan
 
