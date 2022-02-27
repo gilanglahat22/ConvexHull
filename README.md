@@ -16,31 +16,31 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 # Cara Penggunaan
 
 ## Opening
-<img src="pembuka.jpg" />
+<img src="photo_readme/pembuka.jpg" />
 
 ## Untuk mengimplementasikan programmnya Anda bisa menjalankan file MainProgram.py ataupun main.ipynb
 1. Untuk visualisasi di MainProgram.py anda bisa memvisualisasikan 5 dataset, yaitu Iris, Wine, Breast_Cancer, Diabetes, dan Digit. Dimana untuk memvisualisasikannya akan disajikan pilihan menu awal sebagai berikut.
 
-<img src="MenuAwal.jpg" />
+<img src="photo_readme/MenuAwal.jpg" />
 
 Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna diminta untuk memasukkan kolom sumbu-x dan sumbu-y yang akan diuji serta memasukkan nama file dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
 
-<img src="menulanjutan.jpg" />
+<img src="photo_readme/menulanjutan.jpg" />
 
 Setelah langkah tadi, maka di terminal akan disajikan vertex dari convex hull yang dihasilkan serta akan muncul hasil plot dari convex hull di luar terminal, seperti gambar di bawah ini.
 
-<img src="visualisasi_data.jpg" />
+<img src="photo_readme/visualisasi_data.jpg" />
 
 Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu memilih dataset dan mengulangi langkah-langkah sebelumnya atau mengakhiri program dengan memasukkan command 0, seperti gambar di bawah ini.
  
- <img src="commandlanjutan.jpg" />
+ <img src="photo_readme/commandlanjutan.jpg" />
 
 2. Untuk memvisualisasikan di file main.ipynb, pastikan anda sudah menginstall ipynb (jupyter notebook). Untuk visualisasinya anda, dapat menggunakan IDE jupiter_notebook ataupun Visual Studio Code. Untuk memvisualisasikannya di file main.ipynb, telah tersedia source code masing-masing test dataset pada file tersebut. Jadi, Anda tinggal memilih untuk mengerun source code mana yang anda ingin visualisasikan. Seperti gambar yang ditunjukkan di bawah ini.
 <img src="photo_readme/contoh_code_ipynb.jpg" />
 <img src="photo_readme/contoh_output_ipynb.jpg" />
 
 ## Penutup
-<img src="penutup.jpg" />
+<img src="photo_readme/penutup.jpg" />
 
 ## Identitas Author
 Nama  : Muhammad Gilang Ramadhan (13520137).//
