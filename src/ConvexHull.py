@@ -205,10 +205,10 @@ def tampilkan_plot_grafik(df, data):
     plt.figure(figsize = (10, 6))
     UkuranLabel = len(df['target'].unique())
     colors = Warna(UkuranLabel)
-    plt.title("Gilang")
+    plt.title(str(data.feature_names[sumbu_x])+" vs "+str(data.feature_names[sumbu_y]))
     plt.xlabel(data.feature_names[sumbu_x])
     plt.ylabel(data.feature_names[sumbu_y])
-    print("Titik-titik yang berada pada convex hull sebagai berikut : ")
+    print("Vertex dari convex hull adalah : ")
     for i in range(UkuranLabel):
         bucket = df[df['target'] == i]
         bucket = bucket.iloc[:,[sumbu_x,sumbu_y]].values
