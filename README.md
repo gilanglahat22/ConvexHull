@@ -16,7 +16,6 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 # Cara Penggunaan
 ![image](https://user-images.githubusercontent.com/80266785/155902168-ab6271d3-7676-4613-80a6-c8a593dd9bdb.png)
 
-## Untuk file ConvexHull.py berisi fungsi-fungsi untuk library Convex Hull dan fungsi-fungsi untuk visualisasi data
 ## Untuk mengimplementasikan programmnya Anda bisa menjalankan file MainProgram.py ataupun main.ipynb
 1. Untuk visualisasi di MainProgram.py anda bisa memvisualisasikan 5 dataset, yaitu Iris, Wine, Breast_Cancer, Diabetes, dan Digit. Dimana untuk memvisualisasikannya akan disajikan pilihan menu sebagai berikut.
  ![image](https://user-images.githubusercontent.com/80266785/155901503-eb055d57-b6a9-4f48-8c21-74d1aba3d96c.png)
