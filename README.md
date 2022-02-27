@@ -42,8 +42,8 @@ Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu 
 ## Penutup
 <img src="photo_readme/penutup.jpg" />
 
-# Organogram
-Adapun organogram dari repository ini adalah sebagai berikut.
+# Struktur Repository
+Adapun struktur dari repository ini adalah sebagai berikut.
 1. docs => isinya laporan
 2. src => isinya source code dari program
 3. output => isinya hasil output dari visualisasi plot dataset yang telah disave dari MainProgram.py
@@ -55,7 +55,7 @@ Adapun organogram dari repository ini adalah sebagai berikut.
 3. main.ipynb => isinya beberapa visualisasi dataset dalam bentuk ipynb
 
 # Identitas Author
-Nama  : Muhammad Gilang Ramadhan (13520137).//
-Email : gilanglahat22@gmail.com.
+## Nama  : Muhammad Gilang Ramadhan (13520137).
+## Email : gilanglahat22@gmail.com.
 
 ## Copyright By Muhammad Gilang Ramadhan
