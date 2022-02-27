@@ -7,7 +7,7 @@ Convex Hull merupakan permasalahan yang klasik dalam bidang geometri komputasion
 Adapun repository ini berisi implementasi dari library Convex Hull yang dapat digunakan untuk mencari Convex Hull pada suatu set of point.
 
 ## Requirement
-Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, pastikan anda telah mendownload dan menginstall semua package berikut dengan cara pip install "nama package" di Command Prompt.
+Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, pastikan anda telah mendownload dan menginstall semua package berikut dengan cara pip install "nama package" di Command Prompt dan telah terinstall Python 3 di PC Anda.
 1. Numpy Versi 1.22.2
 2. Pandas Versi 1.4.1
 3. Matplotlib Versi 3.5.1
@@ -42,7 +42,14 @@ Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu 
 ## Penutup
 <img src="photo_readme/penutup.jpg" />
 
-## Identitas Author
+# Organogram
+Adapun organogram dari repository ini adalah sebagai berikut.
+1. docs => isinya laporan
+2. src => isinya source code dari program
+3. output => isinya hasil output dari visualisasi plot dataset yang telah disave dari MainProgram.py
+4. photo_readme => isinya gambar yang diperlukan untuk readme
+
+# Identitas Author
 Nama  : Muhammad Gilang Ramadhan (13520137).//
 Email : gilanglahat22@gmail.com.
 
