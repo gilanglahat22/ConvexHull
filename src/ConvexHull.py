@@ -100,15 +100,15 @@ class ConvexHull:
         return self.forward(koordinat_set)
 
     def _QuickHull(self):        
-        # sort the data by x-axis, then by y-axis
+        # Mengsort data berdasarkan x-axis, kemudian berdasarkan y-axis
         self.array_of_koordinat = self.array_of_koordinat[np.lexsort(np.transpose(self.array_of_koordinat)[::-1])]
         # Mencari left-most of koordinat dan right-most of koordinat
         left_most, right_most = self.array_of_koordinat[0], self.array_of_koordinat[-1]
         # Mendapatkan rest of array_of_koordinat 
         self.array_of_koordinat = self.array_of_koordinat[1:-1]
-        #Menambahkan left-most koordinat ke dalam output 
+        # Menambahkan left-most koordinat ke dalam output 
         self.convext_hull.append(left_most) 
-        #Menambahkan right-most koordinat ke dalam output
+        # Menambahkan right-most koordinat ke dalam output
         self.convext_hull.append(right_most)
 
         self.right_array_of_koordinat, self.left_array_of_koordinat = partisi_setOfkoordinat_menjadiDua(left_most, right_most, self.array_of_koordinat)
@@ -152,7 +152,7 @@ class ConvexHull:
             # Delete koordinat sekarang dari array of koordinat yang original
             array_of_koordinat = np.delete(array_of_koordinat, indeks, axis=0)
         
-        # mereturn hasil partisi segitiga ke temp1 dan temp2   
+        # Mereturn hasil partisi segitiga ke temp1 dan temp2   
         temp1, temp2 = Partisi_Segitiga(array_of_koordinat, Vertex1, koordinat_sekarang, Vertex2)
         self._Mencarihull(temp1, Vertex1, koordinat_sekarang)
         self._Mencarihull(temp2, koordinat_sekarang, Vertex2)
