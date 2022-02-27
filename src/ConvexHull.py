@@ -12,7 +12,7 @@ def Menghitung_jarak(mulai, selesai, koordinat, eps=1e-8):
     return jarak
 
 # Fungsi untuk membagi dua set of koordinat menjadi dua daerah
-def partisi_setOfkoordinat_manjadiDua(mulai, selesai, array_of_koordinat):
+def partisi_setOfkoordinat_menjadiDua(mulai, selesai, array_of_koordinat):
     # Jika koordinat is None atau < 1
     if array_of_koordinat is None or array_of_koordinat.shape[0] < 1:
         return None, None
@@ -98,6 +98,24 @@ class ConvexHull:
     
     def __call__(self, koordinat_set):
         return self.forward(koordinat_set)
+    
+    # def _isDidalam(self, koordinat):
+    #     for i in range(self.convext_hull.shape[0]-1):
+    #         mulai = self.convext_hull[i] 
+    #         selesai = self.convext_hull[i+1]
+    #         if Menghitung_jarak(mulai, selesai, koordinat) < 0:
+    #             return False
+    #     return True
+    
+    # def isDidalam(self, array_of_koordinat):
+    #     if len(self.convext_hull) == 0:
+    #         print("Mohon setidaknya build 1 Convex Hull")
+    #         return None
+    #     Hasil = []   
+    #     for koordinat in array_of_koordinat:
+    #         Hasil.append(self._isDidalam(koordinat))
+    #     Hasil = np.asarray(Hasil)
+    #     return Hasil
 
     def _QuickHull(self):        
         # sort the data by x-axis, then by y-axis
@@ -111,7 +129,7 @@ class ConvexHull:
         #Menambahkan right-most koordinat ke dalam output
         self.convext_hull.append(right_most)
 
-        self.right_array_of_koordinat, self.left_array_of_koordinat = partisi_setOfkoordinat_manjadiDua(left_most, right_most, self.array_of_koordinat)
+        self.right_array_of_koordinat, self.left_array_of_koordinat = partisi_setOfkoordinat_menjadiDua(left_most, right_most, self.array_of_koordinat)
 
         self._Mencarihull(self.right_array_of_koordinat, left_most, right_most)
         self._Mencarihull(self.left_array_of_koordinat, right_most, left_most)
