@@ -4,7 +4,6 @@
 # SOLVE CONVEX HULL PROBLEM WITH DIVIDE AND CONQUER STRATEGY
 
 import numpy as np
-import numpy as np
 import pandas as pd
 import random
 import matplotlib.pyplot as plt
@@ -95,8 +94,10 @@ class ConvexHull:
 
     def forward(self, koordinat_set):
         if koordinat_set is None or len(koordinat_set) < 3:
+            print()
             print("Convex Hull yang ditemukan tidak valid! Mohon sediakan lebih dari 3 array of koordinat yang unik")
             return None
+
         self.reset()          
         # Menghilangkan elemen yang duplicate
         self.array_of_koordinat = np.unique(koordinat_set, axis=0)
@@ -127,11 +128,9 @@ class ConvexHull:
         if self.convext_hull.shape[0] >= 3:
             return self.convext_hull
         else:
-            try:
-                raise Exception("Array of koordinat yang ditemukan tidak cukup untuk convex hull. Mohon cek lagi input anda!")
-            except Exception as tipe:
-                print(type(tipe))
-                print(tipe.args) 
+            print()
+            print("Array of koordinat yang ditemukan tidak cukup untuk convex hull. Mohon cek lagi input anda!")
+            return None
 
     def _Mencarihull(self, array_of_koordinat, Vertex1, Vertex2):
         if array_of_koordinat is None:
@@ -148,12 +147,9 @@ class ConvexHull:
                     indeks = i
                     jarak = jarak_sekarang
             if koordinat_sekarang is None:
-                try:
-                    raise Exception("input array of koordinat berada di line yang sama. Tidak ada convex hull yang ditemukan!")
-                except Exception as inst:
-                    print(type(inst))
-                    print(inst.args) 
-                    return None
+                print()
+                print("input array of koordinat berada di line yang sama. Tidak ada convex hull yang ditemukan!")
+                return None
             else:
                 self.convext_hull.append(koordinat_sekarang)
                 # Delete koordinat sekarang dari array of koordinat yang original
