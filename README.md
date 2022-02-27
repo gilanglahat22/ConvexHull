@@ -18,13 +18,21 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 
 ## Untuk mengimplementasikan programmnya Anda bisa menjalankan file MainProgram.py ataupun main.ipynb
 1. Untuk visualisasi di MainProgram.py anda bisa memvisualisasikan 5 dataset, yaitu Iris, Wine, Breast_Cancer, Diabetes, dan Digit. Dimana untuk memvisualisasikannya akan disajikan pilihan menu awal sebagai berikut.
+
 <img src="MenuAwal.jpg" />
- Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna disuruh untuk memasukkan kolom sumbu-x dan sumbu-y yang akan diuji serta memasukkan namafile dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
- <img src="menulanjutan.jpg" />
- Setelah langkah tadi, maka di terminal akan disajikan vertex dari convex hull yang dihasilkan serta akan muncul hasil plot dari convex hull di luar terminal, seperti gambar di bawah ini.
- <img src="visualisasi_data.jpg" />
- Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu memilih dataset dan mengulangi langkah-langkah sebelumnya atau mengakhiri program dengan memasukkan command 0, seperti gambar di bawah ini.
+
+Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna disuruh untuk memasukkan kolom sumbu-x dan sumbu-y yang akan diuji serta memasukkan namafile dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
+
+<img src="menulanjutan.jpg" />
+
+Setelah langkah tadi, maka di terminal akan disajikan vertex dari convex hull yang dihasilkan serta akan muncul hasil plot dari convex hull di luar terminal, seperti gambar di bawah ini.
+
+<img src="visualisasi_data.jpg" />
+
+Setelah itu, anda diminta memasukkan command yang sama dengan command pada menu memilih dataset dan mengulangi langkah-langkah sebelumnya atau mengakhiri program dengan memasukkan command 0, seperti gambar di bawah ini.
+ 
  <img src="commandlanjutan.jpg" />
+
 2. Untuk memvisualisasikan di file main.ipynb, pastikan anda sudah menginstall ipynb (jupyter notebook). Untuk visualisasinya anda, dapat menggunakan IDE jupiter_notebook ataupun Visual Studio Code. Untuk memvisualisasikannya di file main.ipynb, telah tersedia source code masing-masing test dataset pada file tersebut. Jadi, Anda tinggal memilih untuk mengerun source code mana yang anda ingin visualisasikan. Seperti gambar yang ditunjukkan di bawah ini.
 ![image](https://user-images.githubusercontent.com/80266785/155901927-5ef90ca5-e959-47bb-9ccb-c534d325adba.png)
 ![image](https://user-images.githubusercontent.com/80266785/155901938-74ceb373-a8e1-4a22-829b-c1a12a406949.png)
@@ -32,7 +40,7 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 <img src="penutup.jpg" />
 
 ## Identitas Author :
-Nama  : Muhammad Gilang Ramadhan (13520137)
-Email : gilanglahat22@gmail.com 
+Nama  : Muhammad Gilang Ramadhan (13520137).
+Email : gilanglahat22@gmail.com.
 
 ## Copyright By Muhammad Gilang Ramadhan
