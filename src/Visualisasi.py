@@ -43,7 +43,7 @@ def tampilkan_tabel_dataset(df):
 
 # Fungsi untuk menampilkan plot grafik
 def tampilkan_plot_grafik(df, data):
-    selesai = True
+    selesai = 0
     sumbu_x = int(input("Masukkan Kolom untuk sumbu-x : "))
     sumbu_y = int(input("Masukkan Kolom untuk sumbu-y : "))
     savefile = input("Masukkan nama file yang ingin disave : ")
@@ -63,10 +63,8 @@ def tampilkan_plot_grafik(df, data):
             print(convexhull)
             convexhull = np.vstack([convexhull, convexhull[0]])
             plt.plot(convexhull[:,0], convexhull[:,1], colors[i])
-        else:
-            selesai = False
-            break
-    if selesai == True:
+            selesai += 1
+    if selesai > 0:
         plt.legend()
         plt.savefig('output/' + savefile)
         plt.show()
