@@ -18,6 +18,10 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 ## Opening
 <img src="photo_readme/pembuka.jpg" />
 
+Pertama-tama clone repository ini di local repository Anda dengan cara menjalankan perintah berikut
+
+`git clone https://github.com/gilanglahat22/Tucil2_13520137.git`
+
 ## Untuk mengimplementasikan programmnya Anda bisa menjalankan file MainProgram.py ataupun main.ipynb
 1. Untuk menjalankan file MainProgram.py anda bisa memasukkan command berikut di terminal
 
