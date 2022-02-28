@@ -36,7 +36,7 @@ Setelah itu, untuk visualisasi di MainProgram.py, Anda bisa memvisualisasikan 5 
 
 <img src="photo_readme/MenuAwal.jpg" />
 
-Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna diminta untuk memasukkan kolom sumbu-x dan sumbu-y yang akan diuji serta memasukkan nama file dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
+Pada pilihan menu tersebut, user diminta untuk memilih dataset yang ingin divisualisasikan. Setelah itu, pengguna diminta untuk memasukkan kolom sumbu-x dan sumbu-y (kolom tersebut diambil darim masing-masing kolom dari tabel dataset yang akan diuji, dimana kolom dimulai dari 0 sampai jumlah maksimum kolom - 1) yang akan diuji serta memasukkan nama file dari hasil visualisasi plot yang akan diuji (cukup berikan namanya saja tanpa ekstensi apapun seperti .png, .txt, dll. Karena akan otomatis tersimpan dengan format PNG), sebagaimana gambar dibawah ini.
 
 <img src="photo_readme/menulanjutan.jpg" />
 
