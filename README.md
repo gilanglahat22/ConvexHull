@@ -12,6 +12,7 @@ Berikut adalah requirement yang dipakai untuk mengimplementasikan program ini, p
 2. pandas==1.4.1
 3. matplotlib==3.5.1
 4. scikit-learn==1.0.2
+5. random
 
 # Cara Penggunaan
 
