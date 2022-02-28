@@ -11,7 +11,7 @@ def Menghitung_jarak(mulai, selesai, koordinat, eps=1e-8):
     jarak = np.cross(selesai-mulai,koordinat-mulai)/(np.linalg.norm(selesai-mulai)+eps)
     return jarak
 
-# Fungsi untuk membagi dua set of koordinat menjadi dua daerah
+# Fungsi untuk membagi Sebuah set of koordinat menjadi dua daerah dengan comparing cross product
 def partisi_setOfkoordinat_menjadiDua(mulai, selesai, array_of_koordinat):
     # Jika koordinat is None atau < 1
     if array_of_koordinat is None or array_of_koordinat.shape[0] < 1:
