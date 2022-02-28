@@ -49,11 +49,11 @@ def Partisi_Segitiga(Array_of_koordinat, Vertex1, Vertex2, Vertex3):
         temp1 = []
         temp2 = []
         for koordinat in Array_of_koordinat:
-            jarakPC = Menghitung_jarak(Vertex1, Vertex2, koordinat)
-            jarakCQ = Menghitung_jarak(Vertex2, Vertex3, koordinat)
-            if jarakPC > 0 and jarakCQ < 0:
+            jarakV1V2 = Menghitung_jarak(Vertex1, Vertex2, koordinat)
+            jarakV2V3 = Menghitung_jarak(Vertex2, Vertex3, koordinat)
+            if jarakV1V2 > 0 and jarakV2V3 < 0:
                 temp1.append(koordinat)
-            elif jarakPC < 0 and jarakCQ > 0:
+            elif jarakV1V2 < 0 and jarakV2V3 > 0:
                 temp2.append(koordinat)
     
     # Mengubah dari bentuk koordinat dari temp1 dan temp2 menjadi bentuk array of numpy
