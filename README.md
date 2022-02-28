@@ -60,9 +60,10 @@ Adapun struktur dari repository ini adalah sebagai berikut.
 4. photo_readme => isinya gambar yang diperlukan untuk readme
 
 # Strutur Source Code
-1. ConvexHull.py => isinya fungsi-fungsi untuk library Convex Hull dan fungsi-fungsi untuk visualisasi data
-2. MainProgram.py => isinya program utama
-3. main.ipynb => isinya beberapa visualisasi dataset dalam bentuk ipynb
+1. myConvexHull.py => isinya fungsi-fungsi untuk library Convex Hull
+2. Visualisasi.py => isinya fungsi-fungsi untuk visualisasi data
+3. MainProgram.py => isinya program utama
+4. main.ipynb => isinya beberapa visualisasi dataset dalam bentuk ipynb
 
 # Identitas Author
 ## Nama  : Muhammad Gilang Ramadhan (13520137).
